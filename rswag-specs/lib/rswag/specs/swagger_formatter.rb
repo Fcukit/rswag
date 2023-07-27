@@ -109,7 +109,7 @@ module Rswag
       end
 
       def yaml_prepare(doc)
-        json_doc = JSON.pretty_generate(doc)
+        json_doc = JSON.generate(doc)
         JSON.parse(json_doc)
       end
 
